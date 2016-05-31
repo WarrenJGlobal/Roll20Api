@@ -1,7 +1,7 @@
-// GitHub :
+// GitHub : https://github.com/WarrenJGlobal/Roll20Api/blob/master/PTUtokenAction/PTUtokenAction.js
 // By Warren.J  (Global)
 // Contact: https://app.roll20.net/users/596590/
-// Roll20 Thread: 
+// Roll20 Thread: https://app.roll20.net/forum/post/3448102/script-ptutokenaction-creates-token-actions-for-use-with-ptu-pokemon-tabletop-united/
 // Special thanks to The Aaron (Assisting with various issues) & Kevin (Created the origional TokenAction for 5th Edition which I used the basic structure and functions)
 
 var PTUtokenAction = PTUtokenAction || (function() {
@@ -11,7 +11,7 @@ var PTUtokenAction = PTUtokenAction || (function() {
     var showAsTokenAction = true;   //Setting true will automatically enable any newly created token actions. Setting false leaves newly created token actions disabled.
     
     var version = '1.0.0',
-        lastUpdate = 1461365121,
+        lastUpdate = 1464684788,
         
     checkInstall = function() {
         log('~=} PTUtokenAction v'+version+' {=~  ['+(new Date(lastUpdate*1000))+']');
@@ -282,7 +282,7 @@ var PTUtokenAction = PTUtokenAction || (function() {
 							break;
 						
                         default:
-                            sendChat("TokenAction", "/w " + msg.who + "Syntax:  '!ta --option' where options are DELETE, speed, moves, tablemoves, ");
+                            sendChat("TokenAction", "/w " + msg.who + "Syntax:  '!ptuta --option' where options are DELETE, speed, moves, mtable, ");
                     }
                 });
                 
